@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100i,200,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,600&display=swap');
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+.tcancel p{
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.formCancel{
+    background-color: #f0f0f0;
+    margin: 1em auto;
+    padding: 1em;
+    /*width: 50%;*/
+    border-radius: 1em;
+    -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+}
+.dadosPedido{
+    background-color: #f0f0f0;
+    margin: 1em auto;
+    padding: 1em;
+    /*width: 50%;*/
+    border-radius: 1em;
+    
+}
+.botaocancel{
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.8em;
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    
+}
+footer span{
+    color: white;
+}
+
+.iconesInativo,
+.iconesAtivo{
+    margin-top: 0.5em;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #5BC565;
+    border: solid 1px rgb(153, 153, 153);
+}
+
+.iconesAtivo img,
+.iconesInativo img
+  {
+    height: 90px;
+}
+.iconesAtivo p  {
+    color: white;
+    margin-top: 0.8em;
+    font-size: 1.4em;
+}
+.iconesInativo p  {
+    color: rgb(144, 144, 144);
+    margin-top: 0.8em;
+    font-size: 1.4em;
+}
+.line1{
+    height: 3px;
+    background-color:rgb(141, 141, 141);
+}
+
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+body{
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .formCancel{
+        width: 100%;
+    }
+    
+    .iconesAtivo, .iconesInativo{
+        width: 90%;
+    }
+    .line1{       
+        display: none;
+
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 601px) {
+    .line1{       
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .BannerLink2, .BannerLink1{       
+        width: 100%;
+       
+    }
+}
+
+/* Avaliação usual */
+
+
+.navbar a{
+    font-size: 18px;
+}
+
+
+
+.logo{
+    margin-left:30px;
+}
+.avaliacao {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+
+.logo_insc{
+    padding-top: 150px;
+    padding-left: 100px;
+}
+.titulo{
+    font-family:'Ubuntu';
+
+}
+.falemais{
+    font-family:'Ubuntu';
+}    
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    .navbar { width: 100%}
+     
+}
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    .caixa-coment {  margin-left: 140px; margin-top: 50px;}
+    .col-esq {   margin-top: 50px;}
+    .navbar { width: 100%}
+}    
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .caixa-coment {  margin-left: 140px; margin-top: 50px;}
+    .col-esq {   margin-top: 50px;}
+    
+}     
+/* Tablets grandes */
+@media (min-width: 1024px max-width: 1200px) {
+    .caixa-coment {  margin-left: 15px; margin-top: 50px;}
+    .col-esq {   margin-top: 50px;}
+}
+/* Desktops Maiores */
+@media (min-width: 1200px ) {
+    .caixa-coment {  margin-left: 140px; margin-top: 50px;}
+    .col-esq {   margin-top: 50px;}
+}
+#coments {
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+    color: #1db3f1;;
+    padding: 5px;
+}
+#divisoria{
+    margin-top: -2px;
+    margin-bottom:2px;
+}
+#user{
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+#avacoment{
+    margin-bottom: 15px;
+    margin-left: 3px;
+}
+#pngcoment{
+    margin-left: 10px;
+}
+#comentario{
+    margin-left: 27px;
+}
+
+/* Fale conosco */
+
+.gjdfs{
+	color:#ffffff;
+}
+
+.gjdfs a:hover{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+.gjdfs a:link{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* Procurar pedido */
+.user{
+    width:40px;
+    height:50px;
+    border-radius:140%;
+    float:left;
+}
+
+
+
+.user2{
+    font-family:'Asap';
+    font-size:15px;
+    font-weight: bold;
+    color:#000000;
+    float:left;
+}
+
+
+
+.user3{
+    font-size:10px;
+    margin-top:-12px;
+    margin-left:100px;
+}
+
+.imgbox{
+    width:150px;
+    height:150px;
+    float:left;
+    margin-left:-60px;
+    margin-top:20px;
+}
+
+.editxt{
+    margin-top:-5px;
+}
+
+.ajust{
+    width:150%px;
+    height:30px;
+    margin-left:300px;
+    background-color:#E6E6E6;
+}
+
+.textedit{
+    text-align:auto;
+    font-size:10px;
+}
+
+.editclass{
+    float:left;
+}
+
+.textfcedit{
+    font-family:'Ubuntu';
+    font-size:15px;
+    font-weight:300;
+}
+
+.textfcedit2{
+    font-family:'Ubuntu';
+    font-size:25px;
+    font-weight:400;
+}
+
+.fcedit{
+    float:left;
+}
+
+.fcoscor{
+    background-color:#E6E6E6;
+}
+
+.busca{
+    height:15px;
+    width:15px;
+}
+
+.fcedit2{
+    background-color:#E6E6E6;
+    height:100%;
+}
+
+.editflexbox{
+    background-color:#E6E6E6;
+    border-radius: 10px;
+    font-family:'Ubuntu';
+}
+
+.textboxedit{
+    color:#000000;
+    font-family:'Ubuntu';
+    font-size:13px;
+    font-weight:400;
+    margin-top:10px;
+}
+
+.textboxedit2{
+    color:#000000;
+    font-family:'Ubuntu';
+    font-size:12px;
+    font-weight:400;
+}
+
+.editbutton{
+    font-size:13px;
+    margin-left:60%;
+}
+
+.textprod{
+    color:#000000;
+    font-family:Ubuntu;
+    font-weight:500;
+}
+
+.edittexto{
+    font-family:'Ubuntu';
+    font-weight:400;
+    margin-top:45px;
+}
+
+.edittexto2{
+    font-family:'Ubuntu';
+    font-weight:300;
+    font-size:20px;
+    margin-top:70px;
+}
+.p-auto .img-responsive{
+	margin: 0 auto;
+	display: block;
+}
+
+.avaliacao a{
+	text-decoration:none;
+}

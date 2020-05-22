@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Identificação</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<div class="logo">
+			<a href="index.html">
+			<img src="img/logo.png" height="50px">
+			</A>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link ml-5" href="index.html">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="avaliacao_funcional.html">Avalie sua compra ou venda</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="avaliacao_usual.html">Faça sua avaliação</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="faleconosco.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+<body>
+	<div class="container col-8">
+		<div class="form pt-4">
+			<h4 class="mb-3">Opçoes de Pagamento</h4>
+			<form class="needs-validation" novalidate="">
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label for="cc-nome">Nome no cartão</label>
+						<input type="text" class="form-control" id="cc-nome" placeholder="" required="">
+						<small class="text-muted">Nome completo, como mostrado no cartão.</small>
+						<div class="invalid-feedback">
+							O nome que está no cartão é obrigatório.
+						</div>
+					</div>
+					<div class="col-md-6 mb-3">
+						<label for="cc-numero">Número do cartão de crédito</label>
+						<input type="text" class="form-control" id="cc-numero" placeholder="" required="">
+						<div class="invalid-feedback">
+							O número do cartão de crédito é obrigatório.
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 mb-3">
+						<label for="cc-expiracao">Data de expiração</label>
+						<input type="text" class="form-control" id="cc-expiracao" placeholder="01/01/2030" required="">
+						<div class="invalid-feedback">
+							Data de expiração é obrigatória.
+						</div>
+					</div>
+					<div class="col-md-3 mb-3">
+						<label for="cc-cvv">CVV</label>
+						<input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+						<div class="invalid-feedback">
+							Código de segurança é obrigatório.
+						</div>
+					</div>
+				</div>
+				<hr class="mb-4">
+				<h4 class="mb-3">Pagamento</h4>
+				<div class="d-block my-3">
+					<div class="custom-control custom-radio">
+						<input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+						<label class="custom-control-label" for="credito">Cartão de crédito</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required="">
+						<label class="custom-control-label" for="debito">Cartão de débito</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+						<label class="custom-control-label" for="paypal">PayPal</label>
+					</div>
+					<h4 class="mb-3">Parcelado ou Avista</h4>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="avista" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="avista">À vista</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="Parcelado1x" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="Parcelado1x">Parcelado 1x</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="Parcelado2x" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="Parcelado2x">Parcelado 2x</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="Parcelado3x" name="customRadio" class="custom-control-input">
+						<label class="custom-control-label" for="Parcelado3x">Parcelado 3x</label>
+					</div>
+				</div>
+				<button class="btn btn-primary btn-lg btn-block" type="submit"><a href="#" class="gjdfs">Finalizar</a></button>
+			</form>
+			</form>
+		</div>
+	</div>
+</body>
+
+<footer class="bg-dark text-left p-3">
+	<div class="container">
+		<span>Place Market © 2019 - Todos os direitos reservados</span>
+	</div>
+</footer>
+
+</html>

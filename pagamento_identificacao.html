@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+	<head>
+		<title>Identificação para pagamento</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css"href="style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="logo">
+				<a href="index.html">
+                <img src="img/logo.png" height="50px">
+				</A>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link ml-5" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="avaliacao_funcional.html">Avalie sua compra ou venda</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="avaliacao_usual.html">Faça sua avaliação</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="faleconosco.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<body>
+		<div class="container col-md-8 order-md-1 pt-4">
+          <h4 class="mb-3">Dados Pessoais</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="primeiroNome">Nome</label>
+                <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome válido.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um sobre nome válido.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Rua Issack Feereiara , nº 1000" required="">
+              <div class="invalid-feedback">
+                Por favor, insira seu endereço de entrega.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="pais">País</label>
+                <select class="custom-select d-block w-100" id="pais" required="">
+                  <option value="">Escolha...</option>
+                  <option>Brasil</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, escolha um país válido.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="estado">Estado</label>
+                <select class="custom-select d-block w-100" id="estado" required="">
+                <option value="">Escolha...</option>
+                <option>Acre</option>
+				<option>Alagoas</option>
+				<option>Amapá</option>
+				<option>Amazonas</option>
+				<option>Bahia</option>
+				<option>Ceará</option>
+				<option>Distrito Federal</option>
+				<option>Espírito Santo</option>
+				<option>Goiás</option>
+				<option>Maranhão</option>
+				<option>Mato Grosso</option>
+				<option>Mato Grosso do Sul</option>
+				<option>Minas Gerais</option>
+				<option>Pará</option>
+				<option>Paraíba</option>
+				<option>Paraná</option>
+				<option>Pernambuco</option>
+				<option>Piauí</option>
+				<option>Rio de Janeiro</option>
+				<option>Rio Grande do Norte</option>
+				<option>Rio Grande do Sul</option>
+				<option>Rondônia</option>
+				<option>Roraima</option>
+				<option>Santa Catarina</option>
+				<option>São Paulo</option>
+				<option>Sergipe</option>
+				<option>Tocantins</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, insira um estado válido.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um CEP.
+                </div>
+              </div>
+			  <div class="col-md-6 mb-3">
+                <label for="cep">Contato</label>
+                <input type="text" class="form-control" id="cep" placeholder="(41) 99999-9999" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um CEP.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+			<a href="/pagamento_opcoes.html">
+				<button class="btn btn-primary btn-lg btn-block" type="submit"><a href="pagamentoboleto.html" class="gjdfs">Pagamento em boleto</a></button>
+				<br>
+				<button class="btn btn-primary btn-lg btn-block" type="submit"><a href="pagamento_opcoes.html" class="gjdfs">Pagamento em cartão</button>
+			
+          </form>
+        </div>
+		</div>
+		<footer class="bg-dark text-left p-3">
+        <div class="container">
+            <span>Place Market © 2019 - Todos os direitos reservados</span>
+        </div>
+    </footer>
+	</body>
+</html>

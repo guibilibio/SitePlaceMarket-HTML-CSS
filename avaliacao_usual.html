@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Avaliação Usual</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/funcoes_like.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="
+		width=device-width, initial-scale=1" />
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="logo">
+			<a href="index.html">
+            <img src="img/logo.png" height="50px">
+			</A>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link ml-5" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="avaliacao_funcional.html">Avalie sua compra ou venda</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="avaliacao_usual.html">Faça sua avaliação</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="nav-link" href="faleconosco.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class=".col-12 .col-sm-6 .col-lg-8">
+                <div class="col-esq">
+                    <h3 class="titulo">Como foi sua expêriencia como o usúario ?</h3>
+                    <a href="javascript:void(0)" onclick="Avaliar(1)">
+                        <div class="avaliacao">
+                            <img width="25" height="25" src="img/like0.png" id="s1">
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                        <img width="25" height="25" src="img/like0.png" id="s2"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                        <img width="25" height="25" src="img/like0.png" id="s3"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                        <img width="25" height="25" src="img/like0.png" id="s4"></a>
+
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                        <img width="25" height="25" src="img/like0.png" id="s5"></a>
+                </div>
+                <h5 class="falemais">Fale mais sobre:</h5>
+                <div class="form-group shadow-textarea">
+                    <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="7"
+                        placeholder="Digite seu texto aqui..."></textarea>
+                </div>
+                <p class="btn-enviar">
+                    <button type="button" class="btn btn-info">Enviar</button>
+                </p>
+            </div>
+        </div>
+        <div class=".col-12 .col-sm-6 .col-lg-8">
+            <div class="caixa-coment">
+                <h5 id="comentario">Comentários recentes<img id="pngcoment" width="40" height="40" src="img/chat1.png">
+                </h5>
+                <div id="coments"><img id="user" width="25" height="25" src="img/boy.png">Wesley de Souza<br>
+                    <hr id="divisoria">Excelente viajante, atencioso e prestativo.<br><img width="12" height="12"
+                        src="img/like1.png" id="avacoment"><img width="12" height="12" src="img/like1.png"
+                        id="avacoment"><img width="12" height="12" src="img/like1.png" id="avacoment"><img width="12"
+                        height="12" src="img/like1.png" id="avacoment"><img width="12" height="12" src="img/like1.png"
+                        id="avacoment"></div>
+                </hr>
+                <div id="coments"><img id="user" width="25" height="25" src="img/boy.png">Fernando Freitas<br>
+                    <hr id="divisoria">Já é a terceira vez que encomendo com ele, ótimo.<br><img width="12" height="12"
+                        src="img/like1.png" id="avacoment"><img width="12" height="12" src="img/like1.png"
+                        id="avacoment"><img width="12" height="12" src="img/like1.png" id="avacoment"><img width="12"
+                        height="12" src="img/like1.png" id="avacoment"></div>
+                </hr>
+                <div id="coments"><img id="user" width="25" height="25" src="img/man.png">Guilherme Bilibio<br>
+                    <hr id="divisoria">Comprou um produto e pagou certinho!<br><img width="12" height="12"
+                        src="img/like1.png" id="avacoment"><img width="12" height="12" src="img/like1.png"
+                        id="avacoment"><img width="12" height="12" src="img/like1.png" id="avacoment"><img width="12"
+                        height="12" src="img/like1.png" id="avacoment"></div>
+                </hr>
+                <div id="coments"><img id="user" width="25" height="25" src="img/boy.png">Robson Lemes<br>
+                    <hr id="divisoria">Demorou um pouco para chegar, mas está tudo Ok.<br><img width="12" height="12"
+                        src="img/like1.png" id="avacoment"><img width="12" height="12" src="img/like1.png"
+                        id="avacoment"><img width="12" height="12" src="img/like1.png" id="avacoment"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<footer class="bg-dark text-left p-3">
+    <div class="container">
+        <span>Place Market © 2019 - Todos os direitos reservados</span>
+    </div>
+</footer>
+
+</html>

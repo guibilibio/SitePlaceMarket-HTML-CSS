@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cancelar pedido</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="logo">
+				<a href="index.html">
+                <img src="img/logo.png" height="50px">
+				</A>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link ml-5" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="avaliacao_funcional.html">Avalie sua compra ou venda</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="avaliacao_usual;html">Faça sua avaliação</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="faleconosco.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tcancel">
+                    <p>Cancelar Pedido</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-2">
+                    <img class="img-fluid" src="img/jogo_ps4.png">
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-8 my-2">
+
+
+                    <h3>Jogo PS4</h3><br>
+                    <span>Descrição do produto.</span>
+
+                    <div class="row dadosPedido">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <span>Valor: R$200,00</span>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <span>Quantidade: 1 unidade.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-4">
+                    <div class="tcancel">
+                        <p>Formulário de Cancelamento</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 formCancel">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nome</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="nome@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Motivo do cancelamento?</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Atraso na entrega</option>
+                                    <option>Arrependimento</option>
+                                    <option>Produto danifcado</option>
+                                    <option>Erro no preenchimento de dados de entrega</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Descreva o motivo</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-sm btn-primary botaocancel mt-2"> <span> Solicitar
+                                        Cancelamento</span> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-left p-3">
+        <div class="container">
+            <span>Place Market © 2019 - Todos os direitos reservados</span>
+        </div>
+    </footer>
+</body>
+
+
+</html>

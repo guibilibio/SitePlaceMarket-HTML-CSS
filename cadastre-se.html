@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Cadastre-se</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="
+		width=device-width, initial-scale=1" />
+</head>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<div class="logo">
+			<a href="index.html">
+			<img src="img/logo.png" height="50px">
+			</A>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link ml-5" href="index.html">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="avaliacao_funcional.html">Avalie sua compra ou venda</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="avaliacao_usual.html">Faça sua avaliação</a>
+				</li>
+				<li class="nav-item ml-5">
+					<a class="nav-link" href="faleconosco.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<body>
+
+	<div class="container pt-5">
+			<h3 class="titulo text-center pb-5">Inscreva-se</h3>
+		<div class="row">
+				<div class="col-xl-3 col-md-4 col-sm-6 col-xs-6">
+						<img src="img/logo2.png">
+					</div>
+			
+			<div class="col-xl-3 col-md-4 col-sm-5 col-xs-3 cadast">
+				
+				<label id="name" for="Nome">Nome:</label>
+				<p>
+					<input placeholder="Digite seu nome..." type="text" id="name" />
+				</p>
+				<label id="name" class="E-mail" for="E-mail">E-mail:</label>
+				<p>
+					<input placeholder="Ex: joaodasilva@gmail.com" type="text" id="name" />
+				</p>
+				<label id="name" for="Senha">Senha:</label>
+				<p>
+					<input placeholder="Escolha uma senha..." type="password" id="name" />
+				</p>
+				
+			</div>
+
+			<div class="col-xl-3 col-md-4 col-sm-5 col-xs-3">
+				<label id="name" class="Telefone" for="Telefone">Telefone:</label>
+				<p>
+					<input placeholder="Insira seu telefone..." type="text" id="name" />
+				</p>
+				<label id="name" for="CPF">CPF:</label>
+				<p>
+					<input placeholder="Ex: 123.456.789-00" type="text" id="name" />
+				</p>
+				<label id="name" class="nascimento" for="nascimetno" id="name">Data de Nascimento:</label>
+				<p>
+					<input placeholder="Ex: 12/01/1996" type="text" />
+				</p>
+				<label for="customRadioInline1">Sexo:</label>
+				<div class="form-group">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline1">Masculino</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="customRadioInline2">Feminino</label>
+					</div>
+				</div>
+				<p class="btn-enviar">
+					<button type="button" class="btn btn-info">Enviar</button>
+				</p>
+			</div>
+
+			
+			
+		</div>
+	</div>
+	<footer class="bg-dark text-left p-3">
+        <div class="container">
+            <span>Place Market © 2019 - Todos os direitos reservados</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
